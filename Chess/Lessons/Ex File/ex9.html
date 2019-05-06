@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>JS | Ex 9 </title>	
+		<script>
+			
+			function ex9a(){
+				
+				var total = 0;
+				var price = prompt("הזן מחיר בבקשה");
+					price = Number(price);
+				
+				for( ; price != 0; ){
+					total += price;
+					price = prompt("הזן מחיר בבקשה");
+					price = Number(price);				
+				}
+				
+				alert(total);
+				
+			}
+			
+			function ex9b(){
+				
+				var total = 0;
+				var price = prompt("הזן מחיר בבקשה");
+					price = Number(price);
+				
+				
+				while(price != 0){
+					total += price;
+					price = prompt("הזן מחיר בבקשה");
+					price = Number(price);
+				
+				}
+				
+				alert(total);
+	
+			}
+			
+			function ex9c(){
+			
+				var price = 0, total = 0;
+
+				do{
+					price = prompt("הזן מחיר בבקשה");
+					price = Number(price);
+					total += price;
+				}while( price != 0 )
+				
+				alert(total);
+				
+			}
+			
+			
+			
+			
+		
+		</script>
+	</head>
+	<body style="text-align:center;">
+		
+		<img src="Ex9.PNG"/>
+		<br/>
+		<button onclick="ex9a()"> EX 9 A </button>		
+		<br/>
+		<button onclick="ex9b()"> EX 9 B </button>
+		<br/>
+		<button onclick="ex9c()"> EX 9 C </button>
+		
+		
+
+		
+	</body>
+</html>

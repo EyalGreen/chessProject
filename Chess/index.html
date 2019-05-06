@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Chess</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+
+  <h1 style="text-align:center;">Chess</h1>
+  <h1 id="demo"></h1>
+  <div class="container">
+    <div class="row">
+      <!-- <div class="col"> -->
+      <button onclick="startNewGame()" id="resetButton">Reset Game</button>
+
+      <!-- </div> -->
+    </div>
+    <!-- <div class="row">
+
+    </div> -->
+    <div class="row">
+      <table id="board">
+        <tr>
+          <td><button onclick="btnClicked(id)" class="btdBlack btnBlackRook" type="button" name="button"
+              id="11"></button>
+          </td>
+          <td><button onclick="btnClicked(id)" class="btdWhite btnBlackKnight" type="button" name="button"
+              id="12"></button>
+          </td>
+          <td><button onclick="btnClicked(id)" class="btdBlack btnBlackBishop" type="button" name="button"
+              id="13"></button>
+          </td>
+          <td><button onclick="btnClicked(id)" class="btdWhite btnBlackQueen" type="button" name="button"
+              id="14"></button>
+          </td>
+          <td><button onclick="btnClicked(id)" class="btdBlack btnBlackKing" type="button" name="button"
+              id="15"></button>
+          </td>
+          <td><button onclick="btnClicked(id)" class="btdWhite btnBlackBishop" type="button" name="button"
+              id="16"></button>
+          </td>
+          <td><button onclick="btnClicked(id)" class="btdBlack btnBlackKnight" type="button" name="button"
+              id="17"></button>
+          </td>
+          <td><button onclick="btnClicked(id)" class="btdWhite btnBlackRook" type="button" name="button"
+              id="18"></button>
+          </td>
+
+        </tr>
+        <tr>
+          <td><button onclick="btnClicked(id)" class="btdWhite btnBlackPawn" type="button" name="button"
+              id="21"></button>
+          </td>
+          <td><button onclick="btnClicked(id)" class="btdBlack btnBlackPawn" type="button" name="button"
+              id="22"></button>
+          </td>
+          <td><button onclick="btnClicked(id)" class="btdWhite btnBlackPawn" type="button" name="button"
+              id="23"></button>
+          </td>
+          <td><button onclick="btnClicked(id)" class="btdBlack btnBlackPawn" type="button" name="button"
+              id="24"></button>
+          </td>
+          <td><button onclick="btnClicked(id)" class="btdWhite btnBlackPawn" type="button" name="button"
+              id="25"></button>
+          </td>
+          <td><button onclick="btnClicked(id)" class="btdBlack btnBlackPawn" type="button" name="button"
+              id="26"></button>
+          </td>
+          <td><button onclick="btnClicked(id)" class="btdWhite btnBlackPawn" type="button" name="button"
+              id="27"></button>
+          </td>
+          <td><button onclick="btnClicked(id)" class="btdBlack btnBlackPawn" type="button" name="button"
+              id="28"></button>
+          </td>
+
+        </tr>
+        <tr>
+          <td><button onclick="btnClicked(id)" class="btdBlack" type="button" name="button" id="31"></button></td>
+          <td><button onclick="btnClicked(id)" class="btdWhite " type="button" name="button" id="32"></button></td>
+          <td><button onclick="btnClicked(id)" class="btdBlack" type="button" name="button" id="33"></button></td>
+          <td><button onclick="btnClicked(id)" class="btdWhite" type="button" name="button" id="34"></button></td>
+          <td><button onclick="btnClicked(id)" class="btdBlack" type="button" name="button" id="35"></button></td>
+          <td><button onclick="btnClicked(id)" class="btdWhite" type="button" name="button" id="36"></button></td>
+          <td><button onclick="btnClicked(id)" class="btdBlack" type="button" name="button" id="37"></button></td>
+          <td><button onclick="btnClicked(id)" class="btdWhite" type="button" name="button" id="38"></button></td>
+
+        </tr>
+        <tr>
+          <td><button onclick="btnClicked(id)" class="btdWhite" type="button" name="button" id="41"></button></td>
+          <td><button onclick="btnClicked(id)" class="btdBlack" type="button" name="button" id="42"></button></td>
+          <td><button onclick="btnClicked(id)" class="btdWhite" type="button" name="button" id="43"></button></td>
+          <td><button onclick="btnClicked(id)" class="btdBlack" type="button" name="button" id="44"></button></td>
+          <td><button onclick="btnClicked(id)" class="btdWhite" type="button" name="button" id="45"></button></td>
+          <td><button onclick="btnClicked(id)" class="btdBlack" type="button" name="button" id="46"></button></td>
+          <td><button onclick="btnClicked(id)" class="btdWhite" type="button" name="button" id="47"></button></td>
+          <td><button onclick="btnClicked(id)" class="btdBlack" type="button" name="button" id="48"></button></td>
+
+        </tr>
+        <tr>
+          <td><button onclick="btnClicked(id)" class="btdBlack" type="button" name="button" id="51"></button></td>
+          <td><button onclick="btnClicked(id)" class="btdWhite" type="button" name="button" id="52"></button></td>
+          <td><button onclick="btnClicked(id)" class="btdBlack" type="button" name="button" id="53"></button></td>
+          <td><button onclick="btnClicked(id)" class="btdWhite" type="button" name="button" id="54"></button></td>
+          <td><button onclick="btnClicked(id)" class="btdBlack" type="button" name="button" id="55"></button></td>
+          <td><button onclick="btnClicked(id)" class="btdWhite" type="button" name="button" id="56"></button></td>
+          <td><button onclick="btnClicked(id)" class="btdBlack" type="button" name="button" id="57"></button></td>
+          <td><button onclick="btnClicked(id)" class="btdWhite" type="button" name="button" id="58"></button></td>
+
+        </tr>
+        <tr>
+          <td><button onclick="btnClicked(id)" class="btdWhite" type="button" name="button" id="61"></button></td>
+          <td><button onclick="btnClicked(id)" class="btdBlack" type="button" name="button" id="62"></button></td>
+          <td><button onclick="btnClicked(id)" class="btdWhite" type="button" name="button" id="63"></button></td>
+          <td><button onclick="btnClicked(id)" class="btdBlack" type="button" name="button" id="64"></button></td>
+          <td><button onclick="btnClicked(id)" class="btdWhite" type="button" name="button" id="65"></button></td>
+          <td><button onclick="btnClicked(id)" class="btdBlack" type="button" name="button" id="66"></button></td>
+          <td><button onclick="btnClicked(id)" class="btdWhite" type="button" name="button" id="67"></button></td>
+          <td><button onclick="btnClicked(id)" class="btdBlack" type="button" name="button" id="68"></button></td>
+
+        </tr>
+        <tr>
+          <td><button onclick="btnClicked(id)" class="btdBlack btnWhitePawn" type="button" name="button"
+              id="71"></button>
+          </td>
+          <td><button onclick="btnClicked(id)" class="btdWhite btnWhitePawn" type="button" name="button"
+              id="72"></button>
+          </td>
+          <td><button onclick="btnClicked(id)" class="btdBlack btnWhitePawn" type="button" name="button"
+              id="73"></button>
+          </td>
+          <td><button onclick="btnClicked(id)" class="btdWhite btnWhitePawn" type="button" name="button"
+              id="74"></button>
+          </td>
+          <td><button onclick="btnClicked(id)" class="btdBlack btnWhitePawn" type="button" name="button"
+              id="75"></button>
+          </td>
+          <td><button onclick="btnClicked(id)" class="btdWhite btnWhitePawn" type="button" name="button"
+              id="76"></button>
+          </td>
+          <td><button onclick="btnClicked(id)" class="btdBlack btnWhitePawn" type="button" name="button"
+              id="77"></button>
+          </td>
+          <td><button onclick="btnClicked(id)" class="btdWhite btnWhitePawn" type="button" name="button"
+              id="78"></button>
+          </td>
+
+        </tr>
+        <tr>
+          <td><button onclick="btnClicked(id)" class="btdWhite btnWhiteRook" type="button" name="button"
+              id="81"></button>
+          </td>
+          <td><button onclick="btnClicked(id)" class="btdBlack btnWhiteKnight" type="button" name="button"
+              id="82"></button>
+          </td>
+          <td><button onclick="btnClicked(id)" class="btdWhite btnWhiteBishop" type="button" name="button"
+              id="83"></button>
+          </td>
+          <td><button onclick="btnClicked(id)" class="btdBlack btnWhiteQueen" type="button" name="button"
+              id="84"></button>
+          </td>
+          <td><button onclick="btnClicked(id)" class="btdWhite btnWhiteKing" type="button" name="button"
+              id="85"></button>
+          </td>
+          <td><button onclick="btnClicked(id)" class="btdBlack btnWhiteBishop" type="button" name="button"
+              id="86"></button>
+          </td>
+          <td><button onclick="btnClicked(id)" class="btdWhite btnWhiteKnight" type="button" name="button"
+              id="87"></button>
+          </td>
+          <td><button onclick="btnClicked(id)" class="btdBlack btnWhiteRook" type="button" name="button"
+              id="88"></button>
+          </td>
+
+        </tr>
+      </table>
+
+    </div>
+  </div>
+
+
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script defer src="main.js"></script>
+
+</body>
+
+</html>

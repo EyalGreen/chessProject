@@ -1,0 +1,3 @@
+for(const i of array){
+	//i is equal to grades[index]
+}

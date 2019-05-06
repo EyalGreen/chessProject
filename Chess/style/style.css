@@ -1,0 +1,166 @@
+body {
+    background-color: #ff6666
+}
+
+.btnRedBg {
+    width: 80px;
+    height: 80px;
+    background-color: #ff0000;
+}
+
+.btnYellowBg {
+    width: 80px;
+    height: 80px;
+    background-color: #ffff00;
+}
+
+.btnBlackPawn {
+    background-Image: url("../blackPawn.png");
+    background-size: 60px;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 80px;
+    height: 80px;
+}
+
+.btnBlackRook {
+    background-Image: url("../BlackRook.png");
+    background-size: 80px;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 80px;
+    height: 80px;
+}
+
+.btnWhiteRook {
+    background-Image: url("../WhiteRook.png");
+    background-size: 80px;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 80px;
+    height: 80px;
+}
+
+.btnBlackKnight {
+    background-Image: url("../BlackKnight.png");
+    background-size: 80px;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 80px;
+    height: 80px;
+}
+
+.btnWhiteKnight {
+    background-Image: url("../WhiteKnight.png");
+    background-size: 80px;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 80px;
+    height: 80px;
+}
+
+.btnWhiteBishop {
+    background-Image: url("../WhiteBishop.png");
+    background-size: 100px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    width: 80px;
+    height: 80px;
+}
+
+.btnBlackBishop {
+    background-Image: url("../BlackBishop.png");
+    background-size: 100px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    width: 80px;
+    height: 80px;
+}
+
+.btnBlackKing {
+    background-Image: url("../BlackKing.png");
+    background-size: 75px;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 80px;
+    height: 80px;
+}
+
+.btnWhiteKing {
+    background-Image: url("../WhiteKing.png");
+    background-size: 75px;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 80px;
+    height: 80px;
+}
+
+.btnBlackQueen {
+    background-Image: url("../BlackQueen.png");
+    background-size: 75px;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 80px;
+    height: 80px;
+}
+
+.btnWhiteQueen {
+    background-Image: url("../WhiteQueen.png");
+    background-size: 75px;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 80px;
+    height: 80px;
+}
+
+.btnWhitePawn {
+    background-Image: url("../WhitePawn.png");
+    background-size: 60px;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 80px;
+    height: 80px;
+}
+
+.btdBlack {
+    width: 80px;
+    height: 80px;
+    background-color: #595857;
+}
+
+.btdWhite {
+    width: 80px;
+    height: 80px;
+    background-color: #e6e6e6;
+}
+
+.btdWhite:hover {
+    background-color: #c2bbbb;
+}
+
+.btdBlack:hover {
+    background-color: #818582
+}
+
+table {
+    margin: 0 auto;
+}
+
+#resetButton {
+    /* position: relative; */
+    left: 0;
+    width: 100px;
+    height: 50px;
+    font: 20px;
+    text-align: center;
+    background-color: white;
+    border: 1px solid black;
+    margin: 20px auto;
+
+    transition: 0.5s;
+}
+
+#resetButton:hover {
+    transform: scale(1.2);
+    background-color: green;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>JS | Ex 10 </title>	
+		<script>
+			
+			function ex10(){
+			
+				var num = prompt("הזן כמות מילים בבקשה");
+					num = Number(num);
+				var allWord = "", word = "";
+				
+				for(var i = 1; i <= num; i++){
+					word = prompt("הזן מילה " + i + " מתןך " + num);
+					
+					allWord += word;
+					allWord += " ";
+				
+				}
+				
+				alert(allWord);
+				
+			}
+			
+			
+			
+			
+		
+		</script>
+	</head>
+	<body style="text-align:center;">
+		
+		<img src="Ex10.PNG"/>
+		<br/>
+	
+		<button onclick="ex10()"> EX 10 </button>
+		
+		
+
+		
+	</body>
+</html>
