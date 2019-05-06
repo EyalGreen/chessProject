@@ -1,2 +1,2 @@
 # chessProject
-This is my chess project.
+This is my chess project
